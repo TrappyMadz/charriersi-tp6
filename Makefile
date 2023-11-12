@@ -9,6 +9,7 @@ NUM_TP := 6
 REP_SRC := $(shell pwd)
 REP_EXE := $(shell pwd)
 REP_DOC := $(shell pwd)
+REP_TAR := $()
 
 # Compilation
 CC := gcc
@@ -66,7 +67,3 @@ dox:
 # Cible exe
 exe:
 	./bin/charriersi-tpX.out
-
-# Cible tar
-tar:
-	tar -czvf charriersi-tp$(NUM_TP).tar.gz
