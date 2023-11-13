@@ -9,7 +9,6 @@ NUM_TP := 6
 REP_SRC := $(shell pwd)
 REP_EXE := $(shell pwd)
 REP_DOC := $(shell pwd)
-REP_TAR := $()
 
 # Compilation
 CC := gcc
@@ -62,8 +61,8 @@ doc:
 dox:
 	doxygen -g
 
-.PHONY: all clean doc
-
 # Cible exe
 exe:
-	./bin/charriersi-tpX.out
+	./charriersi-tp$(NUM_TP).out
+
+.PHONY: all clean doc exe dox
